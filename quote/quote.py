@@ -6,7 +6,7 @@ from .utils import checks
 import os
 
 defaultQuotes = [
-	"Thats why I love switch hitting, I like to be in control ~ Jan, from the Hypermine Dragon Fight - 21st May 2016 (From Lapis_Bot to here)",
+	"Thats why I love switch hitting, I like to be in control ~ Jan, from the Hypermine Dragon Fight - 21st May 2016",
 	"Thank you for wwaking within our server today- That sounds wrong. That does not sound PG at all -Jandoncom 24/5/16",
 	"EVERYONE RUN! GECKOR IS DRIVING A TRUCK AGAIN /o\ ~ N7DeltaForce 03/06/16",
 	"Everyone wants a piece of this -Jandoncom 7/6/2016",
