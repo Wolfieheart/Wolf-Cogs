@@ -1,6 +1,7 @@
 {
     "AUTHOR" : "Wolfstorm",
+    "INSTALL_MSG" : "Message from The Wolf: Congratulations on making it this far :smiley: ! If you have any issues with my cogs, feel free to jump into Red's Discord Server under #coding and ask for @Wolfstorm :smiley: (link can be found below). \n\n Support Server: <https://discord.gg/0k4npTwMvTpv9wrh>",
+    "NAME" : "Ping - Response Time For Red (Kinda Inaccurate)",
+    "SHORT" : "A Ping System that is better than the current one on Red",
     "DESCRIPTION" : "Inaccurate Ping/Pong Timer \n\nPlease submit issues if you find any bugs or have suggestions.",
-    "DISABLED" : false,
-    "NAME" : "Ping - Response Time For Red (Kinda Inaccurate)"
 }
