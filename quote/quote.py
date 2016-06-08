@@ -19,7 +19,7 @@ class Quote:
 		self.bot = bot
 		self.quotes = fileIO("data/quote/quotes.json", "load")
 
-	def save_quotes(self)
+	def save_quotes(self):
 		fileIO("data/quote/quotes.json", 'save', self.quotes)
 
 	@commands.group(pass_context=True, invoke_without_command=True)
@@ -49,12 +49,12 @@ class Quote:
 			await self.bot.say("Quote: " + quote + " has been removed from the database!")
 
 def check_folder():
-	if not os.path.exists("data/quotes"):
-		print("Creating data/quotes")
-		os.makedirs("data/quotes")
+	if not os.path.exists("data/quote"):
+		print("Creating data/quote")
+		os.makedirs("data/quote")
 
 def check_files():
-	fileName = "data/quotes/quote.json"
+	fileName = "data/quote/quotes.json"
 	if not fileIO(fileName, "check"):
 		print("Creating Empty Quote.json File")
 		print("Creation Complete! Enjoy your new Quote System ~ Wolfstorm")
@@ -62,7 +62,7 @@ def check_files():
 
 def setup(bot):
 	check_folder()
-	check_file()
+	check_files()
 	QuoteSystem = Quote(bot)
 	bot.add_cog(QuoteSystem)
 

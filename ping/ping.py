@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import time 
-from __main __ import send_cmd_help
+from __main__ import send_cmd_help
 
 class Ping:
 	"""Ping"""
@@ -10,14 +10,14 @@ class Ping:
 		self.bot = bot
 
 
-	@commnads.command(pass_context=True)
-	async def pingit(self,ctx):
+	@commands.command(pass_context=True)
+	async def pingit(self, ctx):
 		"""Ping Timer"""
 		channel = ctx.message.channel
 		timer1 = time.perf_counter()
 		await self.bot.send_typing(channel)
 		timer2 = time.perf_counter()
-		await self.bot.say("Pong: {}ms".format((t2-t1)*1000))
+		await self.bot.say("Pong: {}ms".format(round((timer2-timer1)*1000)))
 
 def setup(bot):
 	bot.add_cog(Ping(bot))
