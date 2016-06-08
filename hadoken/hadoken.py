@@ -30,36 +30,34 @@ class Hadoken:
 		fileIO("data/hadoken/fists.json", 'save', self.fists)
 
 	@commands.group(pass_context=True, invoke_without_command=True)
-	async def hadoken(self, ctx, *, user : discord.Member):
+	async def hadoken(self, ctx, *, user : discord.Member=None):
 		"""Do the Hadoken on a user"""
-
 		if ctx.invoked_subcommand is None:
 			if user.id == self.bot.user.id:
 				user = ctx.message.author
-				await self.bot.say("- uses " + randomchoice(self.fists) + " on " + user.name + " - \n\n Next Time " + user.name +" Dont Hadoken Me! :(" )
+				await self.bot.say("- uses " + randomchoice(self.fists) + " on " + user.name + " - \n\n Next Time " + user.name + " Dont Hadoken Me! :crying_cat_face:" )
 				return
 			await self.bot.say("- uses " + randomchoice(self.fists) + " on " + user.name + " -")
 
 	@hadoken.command()
-	@checks.is_owner()
-	async def add(self, item):
+	async def add(self, fist):
 		"""Adds a Fist to the List"""
-		if fist not in self.fists:
-			await self.bot.say("That fist is not on our list")
+		if fist in self.fists:
+			await self.bot.say("That fist is already on our list")
 		else:
 			self.fists.append(fist)
-			self.save_items()
+			self.save_fists()
 			await self.bot.say("Congrats, your new fist has been added to the list! :D")
 
 	@hadoken.command()
 	@checks.is_owner()
-	async def remove(self, item):
+	async def remove(self, fist):
 		"""Remove a Fist from the list"""
 		if fist not in self.fists:
-			await self.bot.say("That fist is not on our list")
+			await self.bot.say("That fist is already on our list")
 		else:
 			self.fists.remove(fist)
-			self.save_items()
+			self.save_fists()
 			await self.bot.say("Awww! Im sad to see that Item Removed :(  *sigh*") 
 
 def folder_check():
