@@ -17,7 +17,7 @@ class Ping:
 		timer1 = time.perf_counter()
 		await self.bot.send_typing(channel)
 		timer2 = time.perf_counter()
-		await self.bot.say("Pong: {}ms".format(round((timer2-timer1)*1000)))
+		await self.bot.say("Pong: {}ms".format((timer2-timer1)*1000))
 
 def setup(bot):
 	bot.add_cog(Ping(bot))
