@@ -2,6 +2,6 @@
     "AUTHOR" : "Wolfstorm",
     "INSTALL_MSG" : "Message from The Wolf: Congratulations on making it this far :smiley: ! If you have any issues with my cogs, feel free to jump into Red's Discord Server under #coding and ask for @Wolfstorm :smiley: (link can be found below). \n\n Support Server: <https://discord.gg/0k4npTwMvTpv9wrh>",
     "NAME" : "Quote System",
-    "SHORT" : "Quotes for Discord, based on the Quote System mIRC Script (Without find/search)",
+    "SHORT" : "Quotes for Discord, based on the Quote System mIRC Script (Without find/search Functionality)",
     "DESCRIPTION" : "Quote System for Red-DiscordBot (Open for General Use!) \n\nPlease submit issues if you find any bugs or have suggestions.",
 }
