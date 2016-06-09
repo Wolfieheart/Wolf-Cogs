@@ -13,7 +13,9 @@ defaultQuotes = [
 	"I Want Khip Kho's Heart! ~ Jandoncom 7/6/2016"]
 
 class Quote:
-	"""Quote System for Red-DiscordBot"""
+	"""Quote System for Red-DiscordBot
+
+	Based on the MIRC Quote Script by Zsadist (Hawkee Link: http://hawkee.com/snippet/8378/ )"""
 
 	def __init__(self, bot):
 		self.bot = bot

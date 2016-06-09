@@ -20,7 +20,11 @@ defaults = [
 	"Gadouken"]
 
 class Hadoken:
-	"""Hadoken: Street Fighters Version of !slap"""
+	"""Hadoken: Street Fighters Version of !slap
+
+	Credit to the Maker of !slap for giving me a hand with the Random
+	Choice Selection. Also credit to @SolidX on #ThePillowFort for 
+	giving me the Idea of making this cog a thing"""
 
 	def __init__(self, bot):
 		self.bot = bot
