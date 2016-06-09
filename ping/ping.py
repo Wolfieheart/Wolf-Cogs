@@ -4,7 +4,9 @@ import time
 from __main__ import send_cmd_help
 
 class Ping:
-	"""Ping"""
+	"""Ping Script
+
+	Based off of: iRDumb's Ping Cog - https://github.com/irdumbs/Dumb-Cogs/tree/master/ping"""
 
 	def __init__(self, bot):
 		self.bot = bot
